@@ -3,11 +3,21 @@ import React, { Component, useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Calculator from './components/Calculator';
+import Comp1 from './components/Comp1';
+import Comp2 from './components/Comp2';
+
+import styled from 'styled-components'; //purely for UI
+
+const MeraButton = styled.button`
+  color: white;
+  background-color: indigo;
+`
+
 //import Calculator from './components/Calculator';
 //import Productlisting from './components/Productlisting';
 
 function App(){
-    const [todos, setTodos] = useState(['shoe polishing','bike riding']);
+    const [todos, setTodos] = useState(['Shoe polishing','Bike Riding']);
   // const [show, setShow] = useState(false)
 
   // function handleshow(){
@@ -28,9 +38,13 @@ function App(){
 
     return (
       <React.Fragment>
-              <Calculator/>
-              
-        {/* <input type="text" onChange={handleChange} value={text}/>
+                <Calculator/>  
+               {/* <MeraButton>I am OK Button</MeraButton>
+
+               <Comp2/> 
+               <Comp1/>  */}
+
+         {/* <input type="text" onChange={handleChange} value={text}/>
         <button onClick={handleClick}>Add</button>
         <ul>
           {
@@ -38,7 +52,7 @@ function App(){
               return <li>{t}</li>
             })
           }
-        </ul> */}
+        </ul>  */}
       
 
       </React.Fragment>
